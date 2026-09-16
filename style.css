@@ -69,8 +69,24 @@ h1 {
 }
 
 .home-copy p {
-  margin: 150px 0 0;
+  margin: 52px 0 0;
   font-size: 18px;
+}
+
+.brand-logos {
+  display: flex;
+  justify-content:space-evenly;
+  gap: 30px;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.brand-logos img {
+  width: 95px;
+  height: 95px;
+  opacity: 0.4;
 }
 
 .home-visual {
@@ -152,6 +168,8 @@ footer {
   .home-content, .listing { width: 90%; margin: 30px auto; }
   .home-content, .cards { flex-direction: column; }
   .home-copy, .home-visual { width: 100%; }
+  .brand-logos { margin-top: 30px; }
+  .brand-logos img { width: 40px; height: 40px; }
   .home-copy p { margin: 30px 0; }
   h1, .listing h1 { font-size: 36px; }
   .card { margin-bottom: 25px; }
