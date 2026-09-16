@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infotix</title>
+  
+</head>
+<body>
+  <!-- PAGE 1: HOME --> 
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #111;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      width: 83%;
+      height: 154px;
+      margin: 0 auto;
+      padding-top: 30px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 50px;
+    }
+
+    .logo-mark {
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-bottom: 50px solid #0876bf;
+    }
+
+    .nav {
+      display: flex;
+      gap: 75px;
+      margin-left: 25%;
+      margin-top: 30px;
+      font-size: 18px;
+    }
+
+    /* Home page */
+    .home-content {
+      width: 75%;
+      margin: 60px 0 0 15%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .home-copy {
+      width: 50%;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 50px;
+      font-weight: normal;
+      line-height: 1;
+    }
+
+    .home-copy p {
+      margin: 150px 0 0;
+      font-size: 18px;
+    }
+
+    .home-visual {
+      width: 42%;
+      text-align: right;
+    }
+
+    .placeholder {
+      height: 155px;
+      background: #000000;
+      color: #777;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+    }
+
+    .hero-placeholder { height: 330px; }
+
+    .call-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 13px 16px;
+      border-radius: 30px;
+      background: #f0f1f3;
+      font-size: 17px;
+    }
+
+    /* Products and services pages */
+    .listing {
+      width: 90%;
+      margin: 70px auto 0;
+    }
+
+    .listing h1 {
+      margin-bottom: 53px;
+      text-align: right;
+      font-size: 56px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 26px;
+    }
+
+    .card {
+      flex: 1;
+    }
+
+    .card h2 {
+      margin: 0 0 14px;
+      font-size: 23px;
+      font-weight: normal;
+    }
+
+    .card p {
+      min-height: 62px;
+      margin: 0 0 15px;
+      color: #555;
+      font-size: 17px;
+      line-height: 1.3;
+    }
+
+    .card .placeholder { border-radius: 15px; }
+
+    footer {
+      width: 50%;
+      margin: auto auto 60px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+      header { width: 90%; height: auto; padding: 30px 0; flex-wrap: wrap; }
+      .nav { margin: 20px 0 0; }
+      .home-content, .listing { width: 90%; margin: 30px auto; }
+      .home-content, .cards { flex-direction: column; }
+      .home-copy, .home-visual { width: 100%; }
+      .home-copy p { margin: 30px 0; }
+      h1, .listing h1 { font-size: 36px; }
+      .card { margin-bottom: 25px; }
+      .card p { min-height: 0; }
+      footer { width: 90%; flex-wrap: wrap; }
+    }
+
+  </style>
+
+  <section class="page">
+    <header>
+      <div class="logo"><span class="logo-mark"></span><span>infotix</span></div>
+      <div class="nav"><span>Services</span><span>Products</span></div>
+    </header>
+    <div class="home-content">
+      <div class="home-copy">
+        <h1>We simplify technology<br>so you can focus on<br>growing your business.</h1>
+        <p>Work with our 15+ years of experts from Oracle, Google, Meta, Amazon, IBM and academic institutions to grow your business.</p>
+      </div>
+      <div class="home-visual">
+        <div class="placeholder hero-placeholder">Image placeholder</div>
+        <span class="call-button">Schedule call with us</span>
+      </div>
+    </div>
+    <footer>
+      <div>25 Sumers St, Oyster Bay<br>New York 11771, USA</div>
+      <div>Who We Are<br>Publications</div>
+      <div>Our mission<br>Our vision</div>
+      <div>Career<br>Internship</div>
+      <div>(917) 222-2222<br>info@infotix.com</div>
+    </footer>
+  </section>
+
+  <!-- PAGE 2: PRODUCTS -->
+  <section class="page">
+    <header>
+      <div class="logo"><span class="logo-mark"></span><span>infotix</span></div>
+      <div class="nav"><span>Services</span><span>Product</span></div>
+    </header>
+    <div class="listing">
+      <h1><strong>Explore</strong> our products</h1>
+      <div class="cards">
+        <div class="card">
+          <h2>Queue Management System</h2>
+          <p>AI driven custom-built apps engineered for excellence and efficiency.</p>
+          <div class="placeholder">Image placeholder</div>
+        </div>
+        <div class="card">
+          <h2>Queue Management System</h2>
+          <p>Cloud-first strategies that drive speed, scale, and savings.</p>
+          <div class="placeholder">Image placeholder</div>
+        </div>
+        <div class="card">
+          <h2>Queue Management System</h2>
+          <p>End-to-end tech support so you can focus on growth, not glitches.</p>
+          <div class="placeholder">Image placeholder</div>
+        </div>
+        <div class="card">
+          <h2>Queue Management System</h2>
+          <p>From vision to execution — strategic IT advisory you can count on.</p>
+          <div class="placeholder">Image placeholder</div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>25 Sumers St, Oyster Bay<br>New York 11771, USA</div>
+      <div>Who We Are<br>Publications</div>
+      <div>Our mission<br>Our vision</div>
+      <div>Career<br>Internship</div>
+      <div>(917) 222-2222<br>info@infotix.com</div>
+    </footer>
+  </section>
+
+  <!-- PAGE 3: SERVICES -->
+  <section class="page">
+    <header>
+      <div class="logo"><span class="logo-mark"></span><span>infotix</span></div>
+      <div class="nav"><span>Services</span><span>Product</span></div>
+    </header>
+    <div class="listing">
+      <h1><strong>What</strong> we can do for you</h1>
+      <div class="cards">
+        <div class="card">
+          <h2>Software development</h2>
+          <p>AI driven custom-built apps engineered for excellence and efficiency.</p>
+          <div class="placeholder">Image placeholder</div>
+        </div>
+        <div class="card">
+          <h2>Cloud solutions</h2>
+          <p>Cloud-first strategies that drive speed, scale, and savings.</p>
+          <div class="placeholder">Image placeholder</div>
+        </div>
+        <div class="card">
+          <h2>Managed services</h2>
+          <p>End-to-end tech support so you can focus on growth, not glitches.</p>
+          <div class="placeholder">Image placeholder</div>
+        </div>
+        <div class="card">
+          <h2>Process optimization</h2>
+          <p>From vision to execution — strategic IT advisory you can count on.</p>
+          <div class="placeholder">Image placeholder</div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>25 Sumers St, Oyster Bay<br>New York 11771, USA</div>
+      <div>Who We Are<br>Publications</div>
+      <div>Our mission<br>Our vision</div>
+      <div>Career<br>Internship</div>
+      <div>(917) 222-2222<br>info@infotix.com</div>
+    </footer>
+  </section>
+</body>
+</html>
